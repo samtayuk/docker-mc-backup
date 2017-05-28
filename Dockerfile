@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk --no-cache add tar gunzip bash
+RUN apk --no-cache add tar gzip bash
 
 ADD https://github.com/itzg/rcon-cli/releases/download/1.3/rcon-cli_linux_amd64 /usr/local/bin/rcon-cli
 COPY start.sh /entrypoint.sh
