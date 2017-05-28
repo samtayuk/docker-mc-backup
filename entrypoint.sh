@@ -9,4 +9,4 @@ port: ${RCON_PORT}
 
 EOF
 
-$@
+exec "$@"
