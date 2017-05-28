@@ -3,7 +3,7 @@ FROM alpine
 RUN apk --no-cache add tar gzip bash
 
 ADD https://github.com/itzg/rcon-cli/releases/download/1.3/rcon-cli_linux_amd64 /usr/local/bin/rcon-cli
-COPY start.sh /entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
 COPY backup-minecraft.sh /usr/local/bin/backup-minecraft
 RUN chmod +x /usr/local/bin/rcon-cli && \
   chmod +x /usr/local/bin/backup-minecraft && \
